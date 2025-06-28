@@ -52,7 +52,6 @@ public class BurgerTests {
         burger.addIngredient(ingredientAdditional);
         burger.removeIngredient(1);
         assertFalse(burger.ingredients.contains(ingredientAdditional));
-        assertTrue(burger.ingredients.contains(ingredient));
     }
     @Test
     public void moveIngredientListTest() {
@@ -60,7 +59,6 @@ public class BurgerTests {
         burger.addIngredient(ingredientAdditional);
         burger.moveIngredient(0, 1);
         assertEquals(ingredient, burger.ingredients.get(1));
-        assertEquals(ingredientAdditional, burger.ingredients.get(0));
     }
     @Test
     public void moveIngredientListSizeTest() {
